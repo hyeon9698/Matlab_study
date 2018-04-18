@@ -351,5 +351,18 @@ Untitled</p>
 <p>x,y 축을 log10 스케일로 플롯한다.</p>
 </blockquote>
 </li>
+<li><p>subplot(a,b,c)</p>
+<blockquote>
+</blockquote>
+</li>
+<li><p>figure(A)</p>
+<blockquote>
+</blockquote>
+</li>
+<li><p>spy(A)</p>
+<blockquote>
+</blockquote>
+</li>
 </ol>
 <h3 id="-">함수</h3>
+<pre class="editor-colors lang-matlab"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>function&nbsp;=&nbsp;plot_graph(a,&nbsp;b,&nbsp;c,&nbsp;x);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%2Dpicture&nbsp;function&nbsp;test</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%출력&nbsp;x,&nbsp;y,&nbsp;z&nbsp;/&nbsp;입력&nbsp;a,&nbsp;b,&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>i&nbsp;=&nbsp;a.*min(x).^2&nbsp;+&nbsp;b.*min(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>j&nbsp;=&nbsp;a.*max(x).^2&nbsp;+&nbsp;b.*max(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>k&nbsp;=&nbsp;a.*median(x).^2&nbsp;+&nbsp;b.*(median(x))&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>y&nbsp;=&nbsp;&nbsp;a.*x.^2&nbsp;+&nbsp;b.*x&nbsp;+&nbsp;c;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>plot(y,x);</span></span></div></pre>
