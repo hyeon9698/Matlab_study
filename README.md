@@ -1,6 +1,6 @@
 <h1 id="matlab">matlab</h1>
 <blockquote>
-<p> math + laboratory</p>
+<p> matrix + laboratory</p>
 </blockquote>
 <h2 id="-">온라인 도움</h2>
 <ol>
@@ -27,9 +27,9 @@ a  b</p>
 </li>
 <li><p>whos : 변수와 변수의 크기를 열거</p>
 <blockquote>
-<p>Name      Size            Bytes  Class     Attributes
-a         1x1                 8  double
-b         1x1                 8  double</p>
+<p>Name      Size            Bytes  Class     Attributes  
+a         1x1                 8  double  
+b         1x1                 8  double</p>
 </blockquote>
 </li>
 <li><p>what : 디스크 안의 m-, mat-, mex- 파일을 열거함</p>
