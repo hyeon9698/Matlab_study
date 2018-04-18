@@ -2,7 +2,6 @@
 <blockquote>
 <p> math + laboratory</p>
 </blockquote>
-<hr>
 <h2 id="-">온라인 도움</h2>
 <ol>
 <li><p>help : 도움 받을수 있는 주제 열거</p>
@@ -18,7 +17,6 @@
 <li><p>demo : 데모 프로그램을 시작함</p>
 </li>
 </ol>
-<hr>
 <h2 id="-">작업공간정보</h2>
 <ol>
 <li><p>who : 변수를 열거</p>
@@ -51,7 +49,6 @@ Untitled</p>
 <li><p>clf : 그림창을 지움</p>
 </li>
 </ol>
-<hr>
 <h2 id="-">디렉토리 정보</h2>
 <ol>
 <li><p>pwd : 현재 작업 디렉토리를 나타냄</p>
@@ -63,7 +60,6 @@ Untitled</p>
 <li><p>mkdir : 디렉토리를 생성함</p>
 </li>
 </ol>
-<hr>
 <h2 id="-">일반적인 정보</h2>
 <ol>
 <li><p>computer : 사용하고 있는 컴퓨터의 형태를 알려줌</p>
@@ -77,7 +73,6 @@ Untitled</p>
 <li><p>ver : 매트랩의 라이센스와 버전에 관한 정보를 줌</p>
 </li>
 </ol>
-<hr>
 <h2 id="-">종료</h2>
 <ol>
 <li><p>^c : 현재 명령의 수행을 중단</p>
@@ -87,7 +82,6 @@ Untitled</p>
 <li><p>exit : 매트랩을 종료함</p>
 </li>
 </ol>
-<hr>
 <h2 id="-">수학</h2>
 <h3 id="-">산술 연산자 : + - * / ^</h3>
 <blockquote>
@@ -284,6 +278,31 @@ Untitled</p>
 <li><p>A'</p>
 <blockquote>
 <p>A transpose</p>
+</blockquote>
+</li>
+<li><p>[col, row] = find(B == max(B(:)))</p>
+<blockquote>
+<p>행렬 B에서 가장 큰값을 찾은다음 col, row에 값을 넣는다.</p>
+</blockquote>
+</li>
+<li><p>[col, row] = find(B == min(B(:)))</p>
+<blockquote>
+<p>행렬 B에서 가장 큰값을 찾은다음 col, row에 값을 넣는다.</p>
+</blockquote>
+</li>
+<li><p>[a, b] = max(B);  </p>
+<blockquote>
+<p>각 열에서 제일 큰 값을 벡터로 a에 넣는다.<br>a 값에 해당하는  행의 값을 벡터로 b에 넣는다.  </p>
+</blockquote>
+</li>
+<li><p>[ c ,col] = max(a')  </p>
+<blockquote>
+<p>a의 값을 transpose 하면 벡터 a의 최대값과 행값이 나오게 된다. </p>
+</blockquote>
+</li>
+<li><p>row = b(col) </p>
+<blockquote>
+<p>행값을 b에 넣으면 </p>
 </blockquote>
 </li>
 </ol>
