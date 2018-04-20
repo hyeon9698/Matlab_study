@@ -1,6 +1,13 @@
 <h1 id="matlab">matlab</h1>
 <blockquote>
-<p> matrix + laboratory</p>
+<p><strong>Math + Laboratory</strong><br><strong>Not</strong> <del>Math + Laboratory</del></p>
+</blockquote>
+<h2 id="-">특징</h2>
+<blockquote>
+<p>element를 구분하려면 space 사용<br>Interactive System<br>Matrix and Vector formulations</p>
+</blockquote>
+<blockquote>
+<p>매틀랩의 기본적인 구성 요소는 행렬이다.<br>내장 함수들은 벡터 연산을 위하여 최적화 되어 있다.<br>매틀랩에서 벡터화된 명령과 코드는 훨씬 빨리 수행된다. </p>
 </blockquote>
 <h2 id="-">온라인 도움</h2>
 <ol>
@@ -25,19 +32,36 @@
 a  b</p>
 </blockquote>
 </li>
-<li><p>whos : 변수와 변수의 크기를 열거</p>
-<blockquote>
-<p>Name      Size            Bytes  Class     Attributes  
-a         1x1                 8  double  
-b         1x1                 8  double</p>
-</blockquote>
+<li><p>whos : 변수와 변수의 크기를 열거  </p>
 </li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Name</th>
+<th style="text-align:center">Size</th>
+<th style="text-align:center">Bytes</th>
+<th style="text-align:center">Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">a</td>
+<td style="text-align:center">1x1</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">double</td>
+</tr>
+<tr>
+<td style="text-align:center">b</td>
+<td style="text-align:center">1x1</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">double</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
 <li><p>what : 디스크 안의 m-, mat-, mex- 파일을 열거함</p>
-<blockquote>
-<p>현재 폴더 C:\Users\riyenas0925\Documents\MATLAB의 MATLAB Code files
-Untitled</p>
-</blockquote>
-</li>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;현재&nbsp;폴더&nbsp;C:\Users\riyenas0925\Documents\MATLAB의&nbsp;MATLAB&nbsp;Code&nbsp;files&nbsp;Untitled</span></span></div></pre></li>
 <li><p>clear :작업공간과  모든 변수를 지움</p>
 </li>
 <li><p>clear x y z : x, y, z 변수를 지움</p>
@@ -111,6 +135,20 @@ Untitled</p>
 </ol>
 <h3 id="-">벡터의 생성</h3>
 <ol>
+<li><p>a = [1 2 3 4]</p>
+<blockquote>
+<p>a = {1 2 3 4 } 는 집합이다.</p>
+</blockquote>
+</li>
+<li><p>a = [1 2 3 4; 5 6 7 8]</p>
+</li>
+<li><p>a = [1 2 3 4<br>5 6 7 8]</p>
+</li>
+<li><p>z = a : b  </p>
+<blockquote>
+<p>a = 1 : 5<br>a = 1 2 3 4 5  </p>
+</blockquote>
+</li>
 <li><p>a = 0 : 10 : 100  </p>
 <blockquote>
 <p>0 &lt;=  a &lt;= 100  (101개)   </p>
@@ -130,6 +168,11 @@ Untitled</p>
 <p>u = a : (b - a)/(n - 1) : b  두개는 같다.</p>
 </blockquote>
 </li>
+<li><p>u = linspace(a, b, n - eps())</p>
+<blockquote>
+<p>eps()는 매우 작은 값을 의미한다. </p>
+</blockquote>
+</li>
 <li><p>v = logspace(a,b,n)  </p>
 <blockquote>
 <p>v = 10.^(linspace(a,b,n))  두개는 같다.</p>
@@ -141,29 +184,23 @@ Untitled</p>
 <li><p>eye(m,n)</p>
 <blockquote>
 <p>eye(3,3)  </p>
-<p>1 0 0<br>0 1 0<br>0 0 1  </p>
 </blockquote>
-</li>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;1&nbsp;0&nbsp;0&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;0&nbsp;1&nbsp;0&nbsp;&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;0&nbsp;0&nbsp;1&nbsp;&nbsp;</span></span></div></pre></li>
 <li><p>zeros(m,n)</p>
 <blockquote>
 <p>zeros(3,3)</p>
-<p>0 0 0<br>0 0 0<br>0 0 0  </p>
 </blockquote>
-</li>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;0&nbsp;0&nbsp;0&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;0&nbsp;0&nbsp;0&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;0&nbsp;0&nbsp;0&nbsp;&nbsp;</span></span></div></pre></li>
 <li><p>ones(m,n)</p>
 <blockquote>
 <p>ones(3,3)</p>
-<p>1 1 1<br>1 1 1<br>1 1 1  </p>
 </blockquote>
-</li>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;1&nbsp;1&nbsp;1&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;1&nbsp;1&nbsp;1&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;1&nbsp;1&nbsp;1&nbsp;&nbsp;</span></span></div></pre></li>
 <li><p>rand(m,n)</p>
 <blockquote>
 <p>rand(3,3)</p>
-<p>2 1 4
-5 8 2
-1 3 8</p>
 </blockquote>
-</li>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;2&nbsp;1&nbsp;4</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;5&nbsp;8&nbsp;2</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;1&nbsp;3&nbsp;8</span></span></div></pre></li>
 <li><p>diag(v)</p>
 <blockquote>
 <p>행렬의 diagonal을 추출</p>
@@ -202,8 +239,11 @@ Untitled</p>
 <li><p>reshape(A,[m,n])</p>
 <blockquote>
 <p>A의 행렬을 mxn 행렬로 변환한다.</p>
-<p>A =<br>1  4  7<br>2  5  9<br>3  6 10 </p>
-<p>reshape(A,[1, 9])<br>A =<br>1 2 3 4 5 6 7 8 9 </p>
+</blockquote>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>A&nbsp;=&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>1&nbsp;&nbsp;4&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>2&nbsp;&nbsp;5&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>3&nbsp;&nbsp;6&nbsp;10&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>reshape(A,[1,&nbsp;9])&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>A&nbsp;=&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;6&nbsp;7&nbsp;8&nbsp;9&nbsp;</span></span></div></pre></li>
+<li><p>length(a)</p>
+<blockquote>
+<p>matrix의 가로 길이를 출력한다.</p>
 </blockquote>
 </li>
 </ol>
@@ -214,9 +254,20 @@ Untitled</p>
 <p>A = rand(3,3) 하고 같다</p>
 </blockquote>
 </li>
+<li><p>A = rand(1,10)</p>
+<blockquote>
+<p>1열 10행짜리 랜덤 벡터를 생성한다.</p>
+</blockquote>
+</li>
+<li><p>A = fix(10.*rand(a))</p>
+<blockquote>
+<p>정수로된 axa 크기의 랜덤변수를 출력한다. </p>
+</blockquote>
+</li>
 <li><p>A( : , 2) = [ ]</p>
 <blockquote>
-<p>2행 모든 열을 삭제 한다.</p>
+<p>2행 모든 열을 삭제 한다.
+만약 기존의 행렬의 범위를 넘어갈시 행렬이 확장된다.</p>
 </blockquote>
 </li>
 <li><p>A([1,3] , : ) = [ 1 2 3 ; 4 5 6]</p>
@@ -242,7 +293,12 @@ Untitled</p>
 </li>
 <li><p>B = A([1 3] , [1 3])</p>
 <blockquote>
-<p>1행 3행, 1열 3열 교차점의 값을 추</p>
+<p>1행 3행, 1열 3열 교차점의 값을 추출</p>
+</blockquote>
+</li>
+<li><p>A(2 : 3 , 1 : 2) = [1 2 ; 3 4]</p>
+<blockquote>
+<p>행 2~3 열 1~2 에 2x2 행렬을 삽입한다.</p>
 </blockquote>
 </li>
 <li><p>u(5 : length(u)) = [ ]</p>
@@ -290,21 +346,8 @@ Untitled</p>
 <p>행렬 B에서 가장 큰값을 찾은다음 col, row에 값을 넣는다.</p>
 </blockquote>
 </li>
-<li><p>[a, b] = max(B);  </p>
-<blockquote>
-<p>각 열에서 제일 큰 값을 벡터로 a에 넣는다.<br>a 값에 해당하는  행의 값을 벡터로 b에 넣는다.  </p>
-</blockquote>
-</li>
-<li><p>[ c ,col] = max(a')  </p>
-<blockquote>
-<p>a의 값을 transpose 하면 벡터 a의 최대값과 행값이 나오게 된다. </p>
-</blockquote>
-</li>
-<li><p>row = b(col) </p>
-<blockquote>
-<p>행값을 b에 넣으면 </p>
-</blockquote>
-</li>
+<li><p>Matrix에서 최대값 찾기  </p>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>[a,&nbsp;b]&nbsp;=&nbsp;max(B);&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;각&nbsp;열에서&nbsp;제일&nbsp;큰&nbsp;값을&nbsp;벡터로&nbsp;a에&nbsp;넣는다.&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;a&nbsp;값에&nbsp;해당하는&nbsp;&nbsp;행의&nbsp;값을&nbsp;벡터로&nbsp;b에&nbsp;넣는다.&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>[&nbsp;c&nbsp;,col]&nbsp;=&nbsp;max(a')&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;a의&nbsp;값을&nbsp;transpose&nbsp;하면&nbsp;벡터&nbsp;a의&nbsp;최대값과&nbsp;행값이&nbsp;나오게&nbsp;된다.&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>row&nbsp;=&nbsp;b(col)&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;행값을&nbsp;b에&nbsp;넣으면&nbsp;row&nbsp;값이&nbsp;나온다.&nbsp;</span></span></div></pre></li>
 </ol>
 <h3 id="-">행렬 및 배열 연산</h3>
 <ol>
@@ -324,6 +367,11 @@ Untitled</p>
 <li><p>plot(x,y)</p>
 <blockquote>
 <p>x,y 축으로 이루어진 실선 그래프를 그린다.</p>
+</blockquote>
+</li>
+<li><p>plot(x)</p>
+<blockquote>
+<p>plot(x, index_num) 로 판단하여 그래프를 그린다.</p>
 </blockquote>
 </li>
 <li><p>plot(x,y,'--')</p>
@@ -353,16 +401,49 @@ Untitled</p>
 </li>
 <li><p>subplot(a,b,c)</p>
 <blockquote>
+<p>한창에 여러개의 그래프를 띄울때<br>subplot(행, 열 ,  번호)<br>여기서의 번호는 알반적인 매트릭스의 번호와 다르다.</p>
 </blockquote>
-</li>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;%&nbsp;세로로&nbsp;그래프&nbsp;3개</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;subplot(3,1,1);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;plot(x,y);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;subplot(3,1,2);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;plot(t,r);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;subplot(3,1,3);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;plot(t,theta);</span></span></div></pre></li>
 <li><p>figure(A)</p>
 <blockquote>
+<p>여러창에 그래프를 띄울때</p>
 </blockquote>
 </li>
 <li><p>spy(A)</p>
 <blockquote>
+<p>Matrix를 그래피컬 하게 보여준다.</p>
+</blockquote>
+</li>
+<li><p>axis squre</p>
+<blockquote>
+<p>그래프를 정사각형으로 맞춘다,</p>
+</blockquote>
+</li>
+<li><p>axis off</p>
+<blockquote>
+<p>좌표축 선과 배경을 표시하지 않는다.</p>
+</blockquote>
+</li>
+<li><p>xlabel("content")</p>
+<blockquote>
+<p>x 축에 이름을 붙인다.</p>
+</blockquote>
+</li>
+<li><p>ylabel("content")</p>
+<blockquote>
+<p>y 축에 이름을 붙인다.</p>
+</blockquote>
+</li>
+<li><p>title("contnent")</p>
+<blockquote>
+<p>제목을 붙인다.</p>
+</blockquote>
+</li>
+<li><p>format long</p>
+<blockquote>
+<p>출력 형식을 long 형으로 출력한다.</p>
 </blockquote>
 </li>
 </ol>
 <h3 id="-">함수</h3>
-<pre class="editor-colors lang-matlab"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>function&nbsp;=&nbsp;plot_graph(a,&nbsp;b,&nbsp;c,&nbsp;x);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%2Dpicture&nbsp;function&nbsp;test</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%출력&nbsp;x,&nbsp;y,&nbsp;z&nbsp;/&nbsp;입력&nbsp;a,&nbsp;b,&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>i&nbsp;=&nbsp;a.*min(x).^2&nbsp;+&nbsp;b.*min(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>j&nbsp;=&nbsp;a.*max(x).^2&nbsp;+&nbsp;b.*max(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>k&nbsp;=&nbsp;a.*median(x).^2&nbsp;+&nbsp;b.*(median(x))&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>y&nbsp;=&nbsp;&nbsp;a.*x.^2&nbsp;+&nbsp;b.*x&nbsp;+&nbsp;c;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>plot(y,x);</span></span></div></pre>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>function&nbsp;=&nbsp;plot_graph(a,&nbsp;b,&nbsp;c,&nbsp;x);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%2Dpicture&nbsp;function&nbsp;test</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%출력&nbsp;x,&nbsp;y,&nbsp;z&nbsp;/&nbsp;입력&nbsp;a,&nbsp;b,&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>i&nbsp;=&nbsp;a.*min(x).^2&nbsp;+&nbsp;b.*min(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>j&nbsp;=&nbsp;a.*max(x).^2&nbsp;+&nbsp;b.*max(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>k&nbsp;=&nbsp;a.*median(x).^2&nbsp;+&nbsp;b.*(median(x))&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>y&nbsp;=&nbsp;&nbsp;a.*x.^2&nbsp;+&nbsp;b.*x&nbsp;+&nbsp;c;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>plot(y,x);</span></span></div></pre>
