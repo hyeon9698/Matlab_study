@@ -109,7 +109,7 @@ a  b</p>
 <h2 id="-">수학</h2>
 <h3 id="-">산술 연산자 : + - * / ^</h3>
 <blockquote>
-<p>element by element 으로 연산하려면 . 연산자를 사용해야한다.</p>
+<p>element by element 으로 연산하려면 .(dot) 연산자를 사용해야한다.</p>
 </blockquote>
 <h3 id="-">지수와 로그함수</h3>
 <ol>
@@ -439,11 +439,6 @@ a  b</p>
 <p>제목을 붙인다.</p>
 </blockquote>
 </li>
-<li><p>format long</p>
-<blockquote>
-<p>출력 형식을 long 형으로 출력한다.</p>
-</blockquote>
-</li>
 </ol>
 <h3 id="-">함수</h3>
-<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>function&nbsp;=&nbsp;plot_graph(a,&nbsp;b,&nbsp;c,&nbsp;x);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%2Dpicture&nbsp;function&nbsp;test</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%출력&nbsp;x,&nbsp;y,&nbsp;z&nbsp;/&nbsp;입력&nbsp;a,&nbsp;b,&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>i&nbsp;=&nbsp;a.*min(x).^2&nbsp;+&nbsp;b.*min(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>j&nbsp;=&nbsp;a.*max(x).^2&nbsp;+&nbsp;b.*max(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>k&nbsp;=&nbsp;a.*median(x).^2&nbsp;+&nbsp;b.*(median(x))&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>y&nbsp;=&nbsp;&nbsp;a.*x.^2&nbsp;+&nbsp;b.*x&nbsp;+&nbsp;c;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>plot(y,x);</span></span></div></pre>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>function&nbsp;=&nbsp;plot_graph(a,&nbsp;b,&nbsp;c,&nbsp;x);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%function[함수출력]&nbsp;=&nbsp;함수이름(함수입력);</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%2Dpicture&nbsp;function&nbsp;test&nbsp;&nbsp;-&gt;&nbsp;H1&nbsp;태그</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%출력&nbsp;x,&nbsp;y,&nbsp;z&nbsp;/&nbsp;입력&nbsp;a,&nbsp;b,&nbsp;c&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>i&nbsp;=&nbsp;a.*min(x).^2&nbsp;+&nbsp;b.*min(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>j&nbsp;=&nbsp;a.*max(x).^2&nbsp;+&nbsp;b.*max(x)&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>k&nbsp;=&nbsp;a.*median(x).^2&nbsp;+&nbsp;b.*(median(x))&nbsp;+&nbsp;c</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>y&nbsp;=&nbsp;&nbsp;a.*x.^2&nbsp;+&nbsp;b.*x&nbsp;+&nbsp;c;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>plot(y,x);</span></span></div></pre>
