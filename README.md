@@ -1,6 +1,6 @@
 <h1 id="matlab">matlab</h1>
 <blockquote>
-<p><strong>Math + Laboratory</strong><br><strong>Not</strong> <del>Math + Laboratory</del></p>
+<p><strong>Matrix + Laboratory</strong><br><strong>Not</strong> <del>Math + Laboratory</del></p>
 </blockquote>
 <h2 id="-">특징</h2>
 <blockquote>
@@ -348,6 +348,11 @@ a  b</p>
 </li>
 <li><p>Matrix에서 최대값 찾기  </p>
 <pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>[a,&nbsp;b]&nbsp;=&nbsp;max(B);&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;각&nbsp;열에서&nbsp;제일&nbsp;큰&nbsp;값을&nbsp;벡터로&nbsp;a에&nbsp;넣는다.&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;a&nbsp;값에&nbsp;해당하는&nbsp;&nbsp;행의&nbsp;값을&nbsp;벡터로&nbsp;b에&nbsp;넣는다.&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>[&nbsp;c&nbsp;,col]&nbsp;=&nbsp;max(a')&nbsp;&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;a의&nbsp;값을&nbsp;transpose&nbsp;하면&nbsp;벡터&nbsp;a의&nbsp;최대값과&nbsp;행값이&nbsp;나오게&nbsp;된다.&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>row&nbsp;=&nbsp;b(col)&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>%&nbsp;행값을&nbsp;b에&nbsp;넣으면&nbsp;row&nbsp;값이&nbsp;나온다.&nbsp;</span></span></div></pre></li>
+<li><p>A(20 &lt; A) = n;</p>
+<blockquote>
+<p>행렬A에서 조건에 맞는 값에 n을 대입한다.</p>
+</blockquote>
+</li>
 </ol>
 <h3 id="-">행렬 및 배열 연산</h3>
 <ol>
