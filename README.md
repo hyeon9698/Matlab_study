@@ -77,7 +77,7 @@ a  b</p>
 <ol>
 <li><p>pwd : 현재 작업 디렉토리를 나타냄</p>
 </li>
-<li><p>cd : 련재 작업 디렉토리를 변경함</p>
+<li><p>cd : 현재 작업 디렉토리를 변경함</p>
 </li>
 <li><p>dir : 현재 디렉토리의 내용을 열거함</p>
 </li>
@@ -168,9 +168,9 @@ a  b</p>
 <p>u = a : (b - a)/(n - 1) : b  두개는 같다.</p>
 </blockquote>
 </li>
-<li><p>u = linspace(a, b, n - eps())</p>
+<li><p>u = linspace(a, b - esp(0), n)</p>
 <blockquote>
-<p>eps()는 매우 작은 값을 의미한다. </p>
+<p>a &lt;= u &lt; b<br>eps()는 매우 작은 값을 의미한다. </p>
 </blockquote>
 </li>
 <li><p>v = logspace(a,b,n)  </p>
@@ -442,6 +442,11 @@ a  b</p>
 <li><p>title("contnent")</p>
 <blockquote>
 <p>제목을 붙인다.</p>
+</blockquote>
+</li>
+<li><p>axis([xmin xmax ymin ymsx])</p>
+<blockquote>
+<p>x, y 축의 범위를 제한한다.</p>
 </blockquote>
 </li>
 </ol>
