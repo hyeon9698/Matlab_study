@@ -1,3 +1,6 @@
+clear
+clc
+
 A = imread('image.jpg');
 
 %이미지 사이즈
