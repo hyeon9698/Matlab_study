@@ -1,8 +1,10 @@
 clear
 clc
 
-x = [550 600 650 700 750]
-y = [41.2 18.62 8.62 3.92 1.86]
+x = [2.5 3 3.5 4 4.5 5 5.5 6 7 8 9 10]
+y = [1500 1220 1050 915 810 745 690 620 520 480 410 390]
+
+x_fine = linspace(2.5,10,3000);
 
 xbar = log(x);
 ybar = log(y);
@@ -12,7 +14,8 @@ a = polyfit(xbar, ybar, 1)
 p0 = exp(a(2));
 b = a(1);
 
-xnew = linspace(550,750,200);
+xnew = linspace(2.5,10,200);
 ynew = p0*xnew.^b;
 
+figure(2)
 plot(x,y,'o',xnew,ynew)

@@ -10,4 +10,5 @@ a = polyfit(x,y,1);
 
 y_fitted = polyval(a,x_fine);
 
+figure(4)
 plot(x,y,'o',x_fine,y_fitted);
