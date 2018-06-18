@@ -19,5 +19,5 @@ for n = round((-r/2) * sin(pi / 3)) : -1 :round((r/2) * sin(pi / 3));
     end
 end
 
-image(flipud(A));
+image(A);
 axis ('square')

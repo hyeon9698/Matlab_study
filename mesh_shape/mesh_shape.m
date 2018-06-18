@@ -8,6 +8,11 @@ y = linspace(-10,10,1000);
 y_rect = (Y >= -4)&(Y <= 4);
 x_rect = (X >= -4)&(X <= 4);
 
+figure(5)
+image(y_rect)
+figure(6)
+image(x_rect)
+
 %사각형 그리기
 F_rect = x_rect .* y_rect;
 

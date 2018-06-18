@@ -4,10 +4,10 @@ clc
 A = imread('image.jpg');
 
 %이미지 사이즈
-[size_x size_y size_z] = size(A);
+[size_y size_x size_z] = size(A);
  
-y = linspace(-1,1,size_x);
-x = linspace(-1,1,size_y);
+x = linspace(-1,1,size_x);
+y = linspace(-1,1,size_y);
 
 %meshgrid 생성
 [X Y] = meshgrid(x,y);
@@ -18,10 +18,10 @@ A_R = A(:,:,1);
 %가우시안 필터
 gaussian = exp(-3*(X.^2 + Y.^2));
 
-A_R1 = A_R([1:size_x/2],[1:size_y/2]);
-A_R2 = A_R([size_x/2:size_x],[1:size_y/2]);
-A_R3 = A_R([1:size_x/2],[size_y/2:size_y]);
-A_R4 = A_R([size_x/2:size_x],[size_y/2:size_y]);
+A_R1 = A_R([1:round(size_y/2)],[1:size_x/2]);
+A_R2 = A_R([round(size_y/2):size_y],[1:size_x/2]);
+A_R3 = A_R([1:round(size_y/2)],[size_x/2:size_x]);
+A_R4 = A_R([round(size_y/2):size_y],[size_x/2:size_x]);
 
 A_sum = [[A_R4 ; A_R3] [A_R2 ; A_R1]];
 
